@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="upBack" prefHeight="91.0" prefWidth="400.0" style="-fx-background-color: fff200;">
+         <children>
+            <Text fx:id="name" fill="#827575" layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОГОДУШКА">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="image" fitHeight="81.0" fitWidth="119.0" layoutX="249.0" layoutY="3.0">
+               <image>
+                  <Image url="@image/hotpng.com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="getData" layoutX="124.0" layoutY="170.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="141.0" text="нажми меня">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Text fx:id="temp" fill="#f5f5f5" layoutX="30.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:" wrappingWidth="317.6163787841797">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="preasure" fill="WHITE" layoutX="30.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:" wrappingWidth="319.1937561035156">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="humididy" fill="WHITE" layoutX="30.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность:" wrappingWidth="330.35888671874994">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="visible" fill="WHITE" layoutX="30.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Видимость:" wrappingWidth="330.35888671874994">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="wind" fill="#eaeaea" layoutX="30.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ветер:" wrappingWidth="330.35888671874994">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="info" fill="#ff1818" layoutX="13.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИНФОРМАЦИЯ:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cityName" layoutX="47.0" layoutY="116.0" prefHeight="42.0" prefWidth="306.0" promptText="Введи город" style="-fx-border-color: red; -fx-border-width: 3px;">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
